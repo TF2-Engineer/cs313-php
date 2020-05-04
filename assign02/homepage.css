@@ -1,0 +1,64 @@
+body {
+    background-color: gainsboro;
+
+}
+
+h1 {
+    font-family: Segoe UI;
+    text-align: center;
+}
+
+h2 {
+    font-family: Segoe UI;
+}
+
+.image {
+    display: block;
+    width: 30%;
+    height: auto;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro {
+    background-color: darkgray;
+    padding: 30px;
+}
+
+p {
+    font-family: Segoe UI;
+    text-align: center;
+}
+
+audio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  overflow: auto;
+}
+
+li {
+    display: inline;
+    float: left;
+    text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  color: white;
+  font-family: Segoe UI;
+}
+
