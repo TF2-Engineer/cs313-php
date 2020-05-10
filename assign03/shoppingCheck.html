@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="homepage.css" type="text/css">
+    <title> Shopping </title>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li><a href="shopping.html">Home</a></li>
+        <li><a href="shoppingBasket.html">Cart</a></li>
+        <li><a href="shoppingCheck.html">Checkout</a>
+      </ul>
+    </div>
+    <div class="intro">
+      <h1> Shopper's Store </h1>
+      <h3> Make your selections below: </h3>
+    </div>
+    <div class="button">
+      <p> Please enter address: </p>
+      <input type="text" id="address">
+      <input type="button" onclick="getAddress()" value="Submit">
+      <a href="shoppingConfirm.html">Confirm Details</a>
+    </div>
+    <script>
+      function getAddress() {
+          var address = getElementById(address).innerHTML;
+          sessionStorage.setItem("address", address);
+      }
+
+    </script>
+  </body>
+  <footer>
+    <p> Thank you for shopping with us. </p>
+  </footer>
+</html>

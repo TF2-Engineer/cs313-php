@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="homepage.css" type="text/css">
+    <title> Shopping </title>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li><a href="shopping.html">Home</a></li>
+        <li><a href="shoppingBasket.html">Cart</a></li>
+        <li><a href="shoppingCheck.html">Checkout</a>
+      </ul>
+    </div>
+    <div class="intro">
+      <h1> Shopper's Store </h1>
+      <h3> Make your selections below: </h3>
+    </div>
+    <div class="button">
+      <input type="button" id="item1" name="item1" value="Purchase" onclick="buyItem1()">
+      <label for="item1"> Vaporeon - $69.00 </label><br>
+      <p> This Vaporeon is a cute one, perfect for any family. </p><br>
+      <input type="button" id="item2" name="item2" value="Purchase" onclick="buyItem2()">
+      <label for="item2"> Flareon - $42.00 </label><br>
+      <p> He's a lot less viable for battle comps, but he's got the fluff. </p><br>
+      <input type="button" id="item3" name="item3" value="Purchase" onclick="buyItem3()">
+      <label for="item3"> Tiny Desk Engineer - $179.99 </label><br>
+      <p> He's useless but he provides emotional support by doing absolutely nothing.</p><br>
+      <input type="button" id="item4" name="item4" value="Purchase" onclick="buyItem4()">
+      <label for="item4"> Chocolate Milk - $10.00 </label><br>
+      <p> Because you're epic. </p><br>
+    </div>
+    <script>
+      function buyItem1() {
+          sessionStorage.setItem("item1", "Vaporeon");
+      }
+      
+      function buyItem2() {
+          sessionStorage.setItem("item2", "Flareon");
+      }
+      
+      function buyItem3() {
+          sessionStorage.setItem("item3", "Tiny Desk Engineer");
+      }
+      
+      function buyItem4() {
+          sessionStorage.setItem("item4", "Chocolate Milk");
+      }
+
+    </script>
+  </body>
+  <footer>
+    <p> Thank you for shopping with us. </p>
+  </footer>
+</html>
+

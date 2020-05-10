@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="homepage.css" type="text/css">
+    <title> Shopping </title>
+  </head>
+  <body onload="display()">
+    <div class="navbar">
+      <ul>
+        <li><a href="shopping.html">Home</a></li>
+        <li><a href="shoppingBasket.html">Cart</a></li>
+        <li><a href="shoppingCheck.html">Checkout </a>
+      </ul>
+    </div>
+    <div class="intro">
+      <h1> Shopper's Store </h1>
+      <h3> Adjust your selections below: </h3>
+    </div>
+    <div class="button">
+      <p id="item1"></p>
+      <input type="button" id="item1remove" onclick="removeItem1()" value="Remove">
+      <p id="item2"></p>
+      <input type="button" id="item2remove" onclick="removeItem2()" value="Remove">
+      <p id="item3"></p>
+      <input type="button" id="item3remove" onclick="removeItem3()" value="Remove">
+      <p id="item4"></p>
+      <input type="button" id="item4remove" onclick="removeItem4()" value="Remove">
+    </div>
+    <script>
+      function display() {
+          var item1 = sessionStorage.getItem("item1");
+          var item2 = sessionStorage.getItem("item2");
+          var item3 = sessionStorage.getItem("item3");
+          var item4 = sessionStorage.getItem("item4");
+
+          document.getElementById("item1").innerHTML = item1;
+          document.getElementById("item2").innerHTML = item2;
+          document.getElementById("item3").innerHTML = item3;
+          document.getElementById("item4").innerHTML = item4;
+      }
+      
+      function removeItem1() {
+          sessionStorage.removeItem("item1");
+          var button = document.getElementById("item1remove");
+          if (button.style.display === "none") {
+              button.style.display = "block";
+          } else {
+              button.style.display = "none";
+          }
+          display();
+      }
+
+      function removeItem2() {
+          sessionStorage.removeItem("item2");
+          var button = document.getElementById("item2remove");
+          if (button.style.display === "none") {
+              button.style.display = "block";
+          } else {
+              button.style.display = "none";
+          }
+          display();
+      }
+
+      function removeItem3() {
+          sessionStorage.removeItem("item3");
+          var button = document.getElementById("item3remove");
+          if (button.style.display === "none") {
+              button.style.display = "block";
+          } else {
+              button.style.display = "none";
+          }
+          display();
+      }
+
+      function removeItem4() {
+          sessionStorage.removeItem("item4");
+          var button = document.getElementById("item4remove");
+          if (button.style.display === "none") {
+              button.style.display = "block";
+          } else {
+              button.style.display = "none";
+          }
+
+          display();
+      }
+
+    </script>
+  </body>
+  <footer>
+    <p> Thank you for shopping with us. </p>
+  </footer>
+</html>
